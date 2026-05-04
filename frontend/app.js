@@ -68,7 +68,8 @@ analyzeBtn.addEventListener('click', async () => {
 formData.append("gradebook", gradebookInput.files[0]);
 formData.append("analytics", analyticsInput.files[0]);
 
-const API_URL = "http://localhost:5000"; // change later when deployed
+const API_URL = "http://54.162.61.66:5000";
+ // change later when deployed
 
 const res = await fetch(`${API_URL}/api/analyze`, {
   method: "POST",  
