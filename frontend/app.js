@@ -71,7 +71,7 @@ formData.append("analytics", analyticsInput.files[0]);
 const API_URL = "http://localhost:5000"; // change later when deployed
 
 const res = await fetch(`${API_URL}/api/analyze`, {
-  method: "POST",
+  method: "POST",  
   body: formData
 });
 
