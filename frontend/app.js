@@ -68,7 +68,8 @@ analyzeBtn.addEventListener('click', async () => {
 formData.append("gradebook", gradebookInput.files[0]);
 formData.append("analytics", analyticsInput.files[0]);
 
-const API_URL = "http://54.162.61.66:5000";
+
+const API_URL = "https://rehydrate-skinny-crawfish.ngrok-free.dev";
  // change later when deployed
 
 const res = await fetch(`${API_URL}/api/analyze`, {
